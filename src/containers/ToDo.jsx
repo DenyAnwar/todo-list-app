@@ -4,10 +4,7 @@ import ToDoForm from "../components/ToDoForm";
 import ToDoList from "../components/ToDoList";
 
 const ToDo = () => {
-  const [todos, setTodos] = useState([
-    {id: 1, task: "menggambar", complete: false},
-    {id: 2, task: "mewarnai", complete: true},
-  ]);
+  const [todos, setTodos] = useState([]);
 
   const handleClick = (todo) => {
     const newTodo = { id: todos.length + 1, task: todo, complete: false}
